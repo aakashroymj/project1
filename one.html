@@ -20,6 +20,39 @@
             text-decoration: none;
 
         }
+
+         /* center a div method 1 */
+
+        /* .container{
+            Display: flex;
+            justify-content:center;
+            align-items: center;
+        } */
+
+        /* center a div method 2 */
+
+        /* .container{
+            display: grid;
+            place-items: center;
+        } */
+
+        /* center a div method 3 */
+        
+        .container{
+            position: absolute;
+            Top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box1{
+            background-color: yellowgreen;
+        }
+        .box2{
+            background-color: gold;
+        }
+        .box3{
+            background-color: blue;
+        }
     </style>
 </head>
 
@@ -35,6 +68,12 @@
         </div>
     </div>
     <h3>Last line added</h3>
+
+<div class="container">
+    <div class=" box box1"><span>Yellow</span></div>
+    <div class=" box box2"><span>Gold</span></div>
+    <div class=" box box3"><span>Blue</span></div>
+</div>
 </body>
 
 </html>
